@@ -28,6 +28,6 @@ class String
 
   def count_sentences
     final = self.split(/[.?!]/).count
-    final = final.reject(&:empty?)
+    final = final.delete(&:empty?)
   end
 end
